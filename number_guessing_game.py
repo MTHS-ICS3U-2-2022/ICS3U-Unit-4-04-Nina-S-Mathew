@@ -16,11 +16,10 @@ def main() -> None:
 
     try:
         for total_guesses in range(5):
-
             number_guessed_string = input("Guess the number between 1 and 10 : ")
             number_guessed = int(number_guessed_string)
 
-            if int(number_guessed) < 11:
+            if int(number_guessed) < 10:
                 if int(number_guessed) > 0:
                     if number_guessed < random_number:
                         print("Your guess is below the number, please guess again")
@@ -32,7 +31,7 @@ def main() -> None:
                         total_guesses = str(total_guesses + 1)
                         print("CORRECT 😊\nPlease play agian")
                         break
-                    
+
                     else:
                         print("Invalid input, try again.")
                 else:
