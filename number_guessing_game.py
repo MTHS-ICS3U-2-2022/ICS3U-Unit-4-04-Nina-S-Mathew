@@ -29,7 +29,7 @@ def main() -> None:
 
                     elif number_guessed == random_number:
                         total_guesses = int(total_guesses + 1)
-                        print("CORRECT 😊\nPlease play agian")
+                        print("CORRECT 😊\nYou guessed it in: " + str(total_guesses) + " Guesses \nPlease play agian")
                         break
 
                     else:
