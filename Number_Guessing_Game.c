@@ -31,7 +31,7 @@ int main() {
         scanf("%d", &NumberGuessed);
         if (NumberGuessed == randomNumber) {
             printf("Correct 😊 ");
-        } else if (NumberGuessed > randomNumber){
+        } else if (NumberGuessed > randomNumber) {
             printf("Too high, try again: \n");
             total_Guesses++;
         } else if (NumberGuessed < 0 || NumberGuessed > 10) {
