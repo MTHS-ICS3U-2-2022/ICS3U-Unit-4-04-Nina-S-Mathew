@@ -31,19 +31,13 @@ int main() {
         scanf("%d", &NumberGuessed);
         if (NumberGuessed == randomNumber) {
             printf("Correct 😊 ");
-        }
-        else if (NumberGuessed > randomNumber) 
-        {
+        }else if (NumberGuessed > randomNumber){
             printf("Too high, try again: \n");
             total_Guesses++;
-        }
-        else if (NumberGuessed < 0 || NumberGuessed > 10) 
-        {
+        }else if (NumberGuessed < 0 || NumberGuessed > 10) {
             printf("Invalid input, try again: ");
             total_Guesses++;
-        }
-        else if (NumberGuessed < randomNumber) 
-        {
+        }else if (NumberGuessed < randomNumber) {
             printf("Too low, try again: ");
             total_Guesses++;
             break;
