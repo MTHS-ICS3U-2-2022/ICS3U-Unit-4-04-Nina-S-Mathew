@@ -11,7 +11,6 @@ import random
 
 def main() -> None:
     random_number = random.randint(1, 10)
-    print(random_number)
     total_guesses = 0
 
     try:
@@ -29,7 +28,7 @@ def main() -> None:
 
                     elif number_guessed == random_number:
                         total_guesses = str(total_guesses + 1)
-                        print("CORRECT 😊\nPlease play agian")
+                        print("CORRECT 😊\nPlease play again")
                         break
 
                     else:
